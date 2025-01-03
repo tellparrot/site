@@ -1,0 +1,127 @@
+Backend Logs:
+
+> Parrot Website@1.0.0 start
+> concurrently -n "client,server" "npm run client" "npm run server"
+
+[client] 
+[client] > Parrot Website@1.0.0 client
+[client] > cd client && npm run dev
+[client] 
+[server] 
+[server] > Parrot Website@1.0.0 server
+[server] > cd server && npm run dev
+[server] 
+[client] 
+[client] > vite_client@0.0.0 dev
+[client] > vite
+[client] 
+[server] 
+[server] > node_server@1.0.0 dev
+[server] > node server.js
+[server] 
+[client] Port 5173 is in use, trying another one...
+[client] Port 5174 is in use, trying another one...
+[client] 
+[client]   VITE v5.4.11  ready in 408 ms
+[client] 
+[client]   ➜  Local:   http://localhost:5175/
+[client]   ➜  Network: use --host to expose
+[server] {"level":"info","time":"2024-12-19T20:59:08.040Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"Defining User schema..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.089Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Defining Role schema..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.124Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Starting server initialization..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.042Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"User schema details:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.042Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"User indexes before creation:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.042Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"User indexes after creation:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.042Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"Starting User model compilation..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.043Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.user","msg":"User model compiled successfully"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.090Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Role schema details:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.090Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Role indexes before creation:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.090Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Creating domain index..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.091Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Role indexes after creation:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.091Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Starting Role model compilation..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.091Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"models.role","msg":"Role model compiled successfully"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.124Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Mongoose details:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.161Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"database","msg":"MongoDB Connected: localhost"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.174Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"database","msg":"Database configuration:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.174Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Models registered in mongoose:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.175Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading User model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.175Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading Role model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.175Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading ContactForm model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.175Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading Domain model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.176Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading Policy model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.176Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Loading Task model..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.176Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"All models loaded. Registered models:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.176Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Database configuration:"}
+[server] {"level":"info","time":"2024-12-19T20:59:08.176Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Registering routes..."}
+[server] {"level":"info","time":"2024-12-19T20:59:08.179Z","pid":32948,"hostname":"LAPTOP-I3DL8GMT","name":"server","msg":"Starting index creation..."}
+[server] node:events:496
+[server]       throw er; // Unhandled 'error' event
+[server]       ^
+[server] 
+[server] Error: listen EADDRINUSE: address already in use :::3000
+[server]     at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+[server]     at listenInCluster (node:net:1964:12)
+[server]     at Server.listen (node:net:2066:7)
+[server]     at Function.listen (c:\Users\WalleyFipps\New folder\pythagora-core\workspace\parrot-website\server\node_modules\express\lib\application.js:635:24)
+[server]     at startServer (c:\Users\WalleyFipps\New folder\pythagora-core\workspace\parrot-website\server\server.js:154:24)
+[server]     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[server] Emitted 'error' event on Server instance at:
+[server]     at emitErrorNT (node:net:1943:8)
+[server]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[server]   code: 'EADDRINUSE',
+[server]   errno: -4091,
+[server]   syscall: 'listen',
+[server]   address: '::',
+[server]   port: 3000
+[server] }
+[server] 
+[server] Node.js v22.11.0
+[server] npm run server exited with code 1
+
+Frontend Logs:
+debug at /@vite/client:494:8: "[vite] connecting..."
+debug at /@vite/client:613:14: "[vite] connected."
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+info at /node_modules/.vite/deps/chunk-NUMECXU6.js?v=f57507db:21550:24: "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools", "font-weight:bold"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: Error extracting value: Execution context was destroyed, most likely because of a navigation., Error extracting value: Execution context was destroyed, most likely because of a navigation.
+error at /node_modules/.vite/deps/chunk-NUMECXU6.js?v=f57507db:14031:30: Error extracting value: Execution context was destroyed, most likely because of a navigation.
+debug at /@vite/client:494:8: "[vite] connecting..."
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+Error: [Toaster] is not a <Route> component. All component children of <Routes> must be a <Route> or <React.Fragment>
+debug at /@vite/client:613:14: "[vite] connected."
+info at /node_modules/.vite/deps/chunk-NUMECXU6.js?v=f57507db:21550:24: "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools", "font-weight:bold"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: "Configured routes:", ["/","/solutions/role-management","/solutions/data-governance","/solutions/task-automation","/pricing","/case-studies","/company/about","/company/blog","/company/careers","/company/contact","/features","/products/pricing","/products/role-manager","/products/domain-governance","/products/task-automation","/products/compliance","/resources/documentation","/resources/training","/resources/support","/resources/support-tickets","/resources/new-ticket","/resources/case-studies","/legal/privacy","/legal/terms","/legal/security","/start-trial","/watch-demo","/contact-sales","/get-started","/login","/register"]
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: "Rendering Routes"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: "Configuring Route paths"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: "Configured routes:", ["/","/solutions/role-management","/solutions/data-governance","/solutions/task-automation","/pricing","/case-studies","/company/about","/company/blog","/company/careers","/company/contact","/features","/products/pricing","/products/role-manager","/products/domain-governance","/products/task-automation","/products/compliance","/resources/documentation","/resources/training","/resources/support","/resources/support-tickets","/resources/new-ticket","/resources/case-studies","/legal/privacy","/legal/terms","/legal/security","/start-trial","/watch-demo","/contact-sales","/get-started","/login","/register"]
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: "Rendering Routes"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: "Configuring Route paths"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: "AuthContext - Current accessToken:", null
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: "AuthContext - Current accessToken:", null
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: "Configured routes:", ["/","/solutions/role-management","/solutions/data-governance","/solutions/task-automation","/pricing","/case-studies","/company/about","/company/blog","/company/careers","/company/contact","/features","/products/pricing","/products/role-manager","/products/domain-governance","/products/task-automation","/products/compliance","/resources/documentation","/resources/training","/resources/support","/resources/support-tickets","/resources/new-ticket","/resources/case-studies","/legal/privacy","/legal/terms","/legal/security","/start-trial","/watch-demo","/contact-sales","/get-started","/login","/register"]
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: "Rendering Routes"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: "Configuring Route paths"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:10: "Configured routes:", ["/","/solutions/role-management","/solutions/data-governance","/solutions/task-automation","/pricing","/case-studies","/company/about","/company/blog","/company/careers","/company/contact","/features","/products/pricing","/products/role-manager","/products/domain-governance","/products/task-automation","/products/compliance","/resources/documentation","/resources/training","/resources/support","/resources/support-tickets","/resources/new-ticket","/resources/case-studies","/legal/privacy","/legal/terms","/legal/security","/start-trial","/watch-demo","/contact-sales","/get-started","/login","/register"]
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:90:12: "Rendering Routes"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:96:14: "Configuring Route paths"
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: "AuthContext - Current accessToken:", null
+log at /@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:22:10: "AuthContext - Current accessToken:", null
+error at /node_modules/.vite/deps/chunk-NUMECXU6.js?v=f57507db:14031:30: "The above error occurred in the <Routes> component:\n\n    at Routes (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=f57507db:6090:3)\n    at AuthProvider (http://localhost:5173/@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/contexts/AuthContext.tsx:21:32)\n    at ThemeProvider (http://localhost:5173/@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/components/ui/theme-provider.tsx:25:3)\n    at _a (http://localhost:5173/node_modules/.vite/deps/react-helmet-async.js?v=f57507db:624:5)\n    at App (http://localhost:5173/@fs/C:/Users/WalleyFipps/New%20folder/pythagora-core/workspace/parrot-website/client/src/App.tsx:53:3)\n    at Router (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=f57507db:6033:13)\n    at BrowserRouter (http://localhost:5173/node_modules/.vite/deps/react-router-dom.js?v=f57507db:8073:3)\n\nConsider adding an error boundary to your tree to customize error handling behavior.\nVisit https://reactjs.org/link/error-boundaries to learn more about error boundaries."
