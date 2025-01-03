@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Parrot Website
 
 Parrot Website is a comprehensive platform designed to streamline role management, maintain data governance standards, and ensure compliance through task automation. The website offers a unified interface for managing roles, domains, policies, and tasks, providing robust solutions for enterprise role management, governance implementation, and compliance reporting.
@@ -132,3 +133,6 @@ The project is proprietary (not open source).
 ```
 Copyright (c) 2024.
 ```
+=======
+# site
+>>>>>>> origin/main
